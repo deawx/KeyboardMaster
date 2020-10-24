@@ -1,0 +1,27 @@
+{
+    "name": "keyboard-master",
+    "version": "1.1.0",
+    "description": "A small javascript library to add keyboard shortcuts to your website.",
+    "main": "lib/index.js",
+    "types": "lib",
+    "scripts": {
+        "watch": "watchexec --exts ts npm run build-all",
+        "build": "esbuild --bundle --outfile=lib/index.js src/index.ts",
+        "minify-build": "esbuild --bundle --minify --outfile=lib/index.min.js src/index.ts",
+        "build-all": "npm run build && npm run minify-build"
+    },
+    "keywords": [
+        "keyboard",
+        "keyboard-shortcuts",
+        "front-end"
+    ],
+    "author": {
+        "name": "Sahithyan",
+        "email": "sahithyan2701@gmail.com"
+    },
+    "license": "ISC",
+    "devDependencies": {
+        "esbuild": "^0.7.19",
+        "typescript": "^3.7.3"
+    }
+}

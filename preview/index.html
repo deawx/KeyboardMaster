@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" theme="normal">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>KeyboardMaster Example</title>
+        <!-- The Library -->
+        <script src="./../lib/index.js"></script>
+
+        <!-- Stable version of the library -->
+        <!-- <script src="https://cdn.jsdelivr.net/gh/sahithyandev/KeyboardMaster@v1.1/lib/index.js"></script> -->
+
+        <style>
+            html {
+                color: black;
+                background-color: white;
+                transition: 0.4s;
+            }
+
+            html[theme="dark"] {
+                background-color: black;
+                color: white;
+            }
+
+            code {
+                background-color: rgb(235, 235, 235);
+                color: black !important;
+                padding: 4px 6px;
+                border-radius: 8px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>Welcome</h1>
+
+        <p style="font-size: 20px">
+            Press <code>Ctrl + Shift + :</code> to switch between Dark mode &
+            Normal mode.
+        </p>
+
+        <script src="./app.js"></script>
+    </body>
+</html>

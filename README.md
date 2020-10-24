@@ -22,7 +22,7 @@ It has support for `keypress`, `keydown`, and `keyup` events on specific keys, k
 
     ```html
     <!-- Use jsdelivr CDN to load KeyboardMaster -->
-    <script src="https://cdn.jsdelivr.net/gh/sahithyandev/KeyboardMaster@v1.2/lib/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/sahithyandev/KeyboardMaster@v1.0/lib/index.js"></script>
 
     <!-- OR -->
 

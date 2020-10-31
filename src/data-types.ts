@@ -1,9 +1,8 @@
 import "./extension";
 
 export interface keyBindingObject {
-    id?: string;
     keyBinding: string;
-    action: Function;
+    action: (keyBinding: string) => void;
 }
 
 export interface keyBindingArray {

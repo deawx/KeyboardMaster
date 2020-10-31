@@ -20,39 +20,41 @@ It has support for `keypress`, `keydown`, and `keyup` events on specific keys, k
 
 1.  Include KeyboardMaster on your page before the closing `</body>` tag
 
-    ```html
+    ```HTML
     <!-- Use jsdelivr CDN to load KeyboardMaster -->
     <script src="https://cdn.jsdelivr.net/gh/sahithyandev/KeyboardMaster@v1.0/lib/index.js"></script>
 
     <!-- OR -->
+    <!-- Use minfied version -->
+    <script src="https://cdn.jsdelivr.net/gh/sahithyandev/KeyboardMaster@v1.0/lib/index.min.js"></script>
 
-    <!-- Download the main file and host it yourself -->
+    <!-- OR -->
+    <!-- Download the file (./lib/index.min.js) and host it yourself -->
     <script src="/path/to/KeyboardMaster.min.js"></script>
     ```
 
 2.  Add some keyboard events to listen for
 
-        ```html
-        <script>
-            document.body.addKeyBindings({
-                seperator: ' + ', // If undefined, defaults to this value
-                bindings: [
-                    {
-                        keyBinding: 'ctrl + shift + :',
-                        action: () => {
-                            console.log('ctrl + shift + : pressed');
-                        }
-                    },
-                    {
-                        keyBinding: 'shift + tab',
-                        action: () => {
-                            console.log('shift + tab pressed');
-                        }
+    ```html
+    <script>
+        document.body.addKeyBindings({
+            seperator: ' + ', // If undefined, defaults to this value
+            bindings: [
+                {
+                    keyBinding: 'ctrl + shift + :',
+                    action: () => {
+                        console.log('ctrl + shift + : pressed');
                     }
-                ]
-            })
-
-    </script>
+                },
+                {
+                    keyBinding: 'shift + tab',
+                    action: () => {
+                        console.log('shift + tab pressed');
+                    }
+                }
+            ]
+        });
+    <script>
     ```
 
 **NOTE**  
@@ -87,4 +89,4 @@ There are a number of other similar libraries out there so what makes this one d
 
 Documentation for this library is being built. Take a look, give feedback.
 
-Visit [DOCUMENTATION.md](https://github.com/KSahithyan/KeyboardMaster/blob/master/DOCUMENTATION.md).
+Visit [DOCUMENTATION.md](./Documentation.md).

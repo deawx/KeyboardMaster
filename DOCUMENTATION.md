@@ -7,15 +7,16 @@ KeyboardMaster uses Typescript to use some advanced features like type declarati
 KeyboardMaster declares 2 data types,
 
 ```typescript
-export interface keyBindingObject {
+interface keyBindingObject {
     keyBinding: string;
-    action: Function;
+    action: (keyBinding: string) => void;
 }
 
-export interface keyBindingArray {
+interface keyBindingArray {
     bindings: Array<keyBindingObject>;
     seperator: string;
 }
+
 ```
 
 ## Methods

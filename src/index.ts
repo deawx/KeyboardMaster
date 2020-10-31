@@ -17,7 +17,7 @@ HTMLElement.prototype.addKeyBindings = function (keyBindings: keyBindingArray) {
                     keyBindings.seperator
                 ).toLowerCase()
             ) {
-                binding.action(event);
+                binding.action.call(this, binding.keyBinding);
             }
         });
     };
@@ -28,7 +28,7 @@ HTMLElement.prototype.addKeyBindings = function (keyBindings: keyBindingArray) {
 
     this.onkeydown = (event) => {
         this.pressed.add(event.key);
-        this.checkKeyBinding();
+        this.checkKeyBinding(event);
     };
     console.log(`bindings added for `, this);
 };

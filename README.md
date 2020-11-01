@@ -18,15 +18,17 @@ It has support for `keypress`, `keydown`, and `keyup` events on specific keys, k
 
 ## Getting started
 
+**Caution I messed up with the git tags while working on it. I published v1.1 and then deleted. But it is still on jsdelivr. So don't use it, it is a older version**
+
 1.  Include KeyboardMaster on your page before the closing `</body>` tag.   
     You can use the CDN to load the file or you can download it from the CDN and refer it locally.
 
     ```HTML    
     <!-- KeyboardMaster@v1.1 - latest released version -->
-    <script src="https://cdn.jsdelivr.net/gh/sahithyandev/KeyboardMaster@v1.1/lib/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/sahithyandev/KeyboardMaster@v1.2/lib/index.js"></script>
 
     <!-- KeyboardMaster@v1.1 - latest, minified released version -->
-    <script src="https://cdn.jsdelivr.net/gh/sahithyandev/KeyboardMaster@v1.1/lib/index.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/sahithyandev/KeyboardMaster@v1.2/lib/index.min.js"></script>
     ```
 <!-- 
     Load latest commit @not-recommended
@@ -61,7 +63,7 @@ It has support for `keypress`, `keydown`, and `keyup` events on specific keys, k
     ```
 
 **NOTE**  
-You can try KeyboardMaster now. But **I don't recommend you to use KeyboardMaster in production for now.**
+You can try KeyboardMaster now. But **I don't recommend you to use KeyboardMaster in production until it gets some popularity. I don't think it will happen.**
 
 <!--
 ## Why KeyboardMaster?

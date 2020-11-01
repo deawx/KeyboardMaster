@@ -1,5 +1,5 @@
-import { formatBinding } from "./utils";
 import { keyBindingArray } from "./data-types";
+import { formatBinding, formatKey } from "./utils";
 
 HTMLElement.prototype.addKeyBindings = function (keyBindings: keyBindingArray) {
     this.pressed = new Set();
@@ -23,11 +23,11 @@ HTMLElement.prototype.addKeyBindings = function (keyBindings: keyBindingArray) {
     };
 
     this.onkeyup = (event) => {
-        this.pressed.delete(event.key);
+        this.pressed.delete(formatKey(event.key));
     };
 
     this.onkeydown = (event) => {
-        this.pressed.add(event.key);
+        this.pressed.add(formatKey(event.key));
         this.checkKeyBinding(event);
     };
     console.log(`bindings added for `, this);

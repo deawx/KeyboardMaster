@@ -18,19 +18,24 @@ It has support for `keypress`, `keydown`, and `keyup` events on specific keys, k
 
 ## Getting started
 
-1.  Include KeyboardMaster on your page before the closing `</body>` tag
+1.  Include KeyboardMaster on your page before the closing `</body>` tag.   
+    You can use the CDN to load the file or you can download it from the CDN and refer it locally.
 
-    ```HTML
-    <!-- Use jsdelivr CDN to load KeyboardMaster -->
-    <script src="https://cdn.jsdelivr.net/gh/sahithyandev/KeyboardMaster@v1.0/lib/index.js"></script>
+    ```HTML    
+    <!-- KeyboardMaster@v1.1 - latest released version @recommended -->
+    <script src="https://cdn.jsdelivr.net/gh/sahithyandev/KeyboardMaster@v1.1/lib/index.js"></script>
 
-    <!-- OR -->
-    <!-- Use minfied version -->
-    <script src="https://cdn.jsdelivr.net/gh/sahithyandev/KeyboardMaster@v1.0/lib/index.min.js"></script>
+    <!-- KeyboardMaster@v1.1 - latest, minified released version @recommended -->
+    <script src="https://cdn.jsdelivr.net/gh/sahithyandev/KeyboardMaster@v1.1/lib/index.min.js"></script>
 
-    <!-- OR -->
-    <!-- Download the file (./lib/index.min.js) and host it yourself -->
-    <script src="/path/to/KeyboardMaster.min.js"></script>
+    <!-- Load latest commit @not-recommended -->
+    <script src="https://cdn.jsdelivr.net/gh/sahithyandev/KeyboardMaster/lib/index.js"></script>
+
+    <!--
+        If it's not released as a version, you can use a commit's build version.
+        To do this, you have to replace the `version` with `commit-id`
+    -->
+    <script src="https://cdn.jsdelivr.net/gh/sahithyandev/KeyboardMaster@7efa43d/lib/index.js"></script>
     ```
 
 2.  Add some keyboard events to listen for

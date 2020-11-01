@@ -9,3 +9,12 @@ export interface keyBindingArray {
     bindings: Array<keyBindingObject>;
     seperator: string;
 }
+
+export interface Configuration {
+    /**
+     * "production":
+     *      The log function will stop console.logging.
+     *      Which means, All console.logs from KeyboardMaster will be removed.
+     */
+    mode: "development" | "production"
+}

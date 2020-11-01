@@ -1,4 +1,5 @@
 import { keyBindingArray } from "./data-types";
+import { CONFIG, updateConfig, log } from './extend-lib';
 import { formatBinding, formatKey } from "./utils";
 
 HTMLElement.prototype.addKeyBindings = function (keyBindings: keyBindingArray) {
@@ -23,17 +24,26 @@ HTMLElement.prototype.addKeyBindings = function (keyBindings: keyBindingArray) {
     };
 
     this.onkeyup = (event) => {
+        console.log(CONFIG);
         this.pressed.delete(formatKey(event.key));
+        log('deleting key from storage', this.pressed);
     };
 
     this.onkeydown = (event) => {
         this.pressed.add(formatKey(event.key));
         this.checkKeyBinding(event);
+        log(event.key);
+        log('adding key to storage', this.pressed);
     };
-    console.log(`bindings added for `, this);
+    log(`bindings added for `, this);
 };
 
 HTMLElement.prototype.removeAllKeyBindings = function () {
-    console.log(this);
+    log(this);
     this.keyBindings.bindings = [];
 };
+
+// @ts-ignore
+module.exports = {
+    updateConfig
+}

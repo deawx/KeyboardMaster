@@ -5,9 +5,9 @@
     "main": "lib/index.js",
     "types": "lib",
     "scripts": {
-        "watch": "watchexec --exts ts npm run build-all",
-        "build": "esbuild --bundle --outfile=lib/index.js src/index.ts",
-        "minify-build": "esbuild --bundle --minify --outfile=lib/index.min.js src/index.ts",
+        "watch": "watchexec --exts ts npm run build",
+        "build": "esbuild --bundle --format=iife --sourcemap --global-name=KeyboardMaster --outfile=lib/index.js src/index.ts",
+        "minify-build": "esbuild --bundle --minify  --format=iife --sourcemap --global-name=KeyboardMaster --outfile=lib/index.min.js src/index.ts",
         "build-all": "npm run build && npm run minify-build"
     },
     "keywords": [

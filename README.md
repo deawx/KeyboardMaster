@@ -22,21 +22,19 @@ It has support for `keypress`, `keydown`, and `keyup` events on specific keys, k
     You can use the CDN to load the file or you can download it from the CDN and refer it locally.
 
     ```HTML    
-    <!-- KeyboardMaster@v1.1 - latest released version @recommended -->
+    <!-- KeyboardMaster@v1.1 - latest released version -->
     <script src="https://cdn.jsdelivr.net/gh/sahithyandev/KeyboardMaster@v1.1/lib/index.js"></script>
 
-    <!-- KeyboardMaster@v1.1 - latest, minified released version @recommended -->
+    <!-- KeyboardMaster@v1.1 - latest, minified released version -->
     <script src="https://cdn.jsdelivr.net/gh/sahithyandev/KeyboardMaster@v1.1/lib/index.min.js"></script>
+    ```
+<!-- 
+    Load latest commit @not-recommended
+    <script src="https://cdn.jsdelivr.net/gh/sahithyandev/KeyboardMaster@latest/lib/index.js"></script>
 
-    <!-- Load latest commit @not-recommended -->
-    <script src="https://cdn.jsdelivr.net/gh/sahithyandev/KeyboardMaster/lib/index.js"></script>
-
-    <!--
         If it's not released as a version, you can use a commit's build version.
         To do this, you have to replace the `version` with `commit-id`
-    -->
-    <script src="https://cdn.jsdelivr.net/gh/sahithyandev/KeyboardMaster@7efa43d/lib/index.js"></script>
-    ```
+    <script src="https://cdn.jsdelivr.net/gh/sahithyandev/KeyboardMaster@7efa43d/lib/index.js"></script> -->
 
 2.  Add some keyboard events to listen for
 

@@ -1,5 +1,5 @@
 import { keyBindingArray } from "./data-types";
-import { CONFIG, updateConfig, log } from './extend-lib';
+import { updateConfig, log } from './extend-lib';
 import { formatBinding, formatKey } from "./utils";
 
 HTMLElement.prototype.addKeyBindings = function (keyBindings: keyBindingArray) {
@@ -24,7 +24,6 @@ HTMLElement.prototype.addKeyBindings = function (keyBindings: keyBindingArray) {
     };
 
     this.onkeyup = (event) => {
-        console.log(CONFIG);
         this.pressed.delete(formatKey(event.key));
         log('deleting key from storage', this.pressed);
     };

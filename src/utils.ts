@@ -27,7 +27,7 @@ export function formatKey(key: string): string {
 	let newKey: string = key
 
 	const replaceKeys = {
-		" ": "Space",
+		" ": "Space"
 	}
 
 	if (replaceKeys[key]) {

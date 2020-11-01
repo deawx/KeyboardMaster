@@ -18,8 +18,9 @@
 		"@typescript-eslint",
 		"prettier"
 	],
+	"ignorePatterns": ["lib/", "lib1/"],
 	"rules": {
-		"prettier/prettier": "error",
+		"prettier/prettier": "warn",
 		"indent": [
 			"error",
 			"tab"

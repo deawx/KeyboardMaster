@@ -38,6 +38,7 @@ HTMLElement.prototype.removeAllKeyBindings = function () {
 	log(this)
 	this.keyBindings.bindings = []
 }
-console.log("")
 
-export { updateConfig }
+module.exports = {
+	updateConfig
+}

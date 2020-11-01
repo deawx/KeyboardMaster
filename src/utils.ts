@@ -4,19 +4,19 @@
  * @description Formats a keyBinding
  */
 export function formatBinding(keyBinding: string, splitter: string): string {
-    return keyBinding
-        .split(splitter)
-        .map((word) => {
-            let newWord = word;
-            if (word.toLowerCase() == "ctrl") {
-                newWord = "Control";
-            }
-            if (word.toLowerCase() == "shift") {
-                newWord = "Shift";
-            }
-            return newWord;
-        })
-        .join(splitter);
+	return keyBinding
+		.split(splitter)
+		.map((word) => {
+			let newWord = word
+			if (word.toLowerCase() == "ctrl") {
+				newWord = "Control"
+			}
+			if (word.toLowerCase() == "shift") {
+				newWord = "Shift"
+			}
+			return newWord
+		})
+		.join(splitter)
 }
 
 /**
@@ -24,15 +24,15 @@ export function formatBinding(keyBinding: string, splitter: string): string {
  * @description Formats a key
  */
 export function formatKey(key: string): string {
-    let newKey: string = key;
+	let newKey: string = key
 
-    const replaceKeys = {
-        " ": "Space"
-    }
+	const replaceKeys = {
+		" ": "Space",
+	}
 
-    if (replaceKeys[key]) {
-        newKey = replaceKeys[key];
-    }
+	if (replaceKeys[key]) {
+		newKey = replaceKeys[key]
+	}
 
-    return newKey;
+	return newKey
 }

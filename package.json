@@ -1,27 +1,33 @@
 {
-    "name": "keyboard-master",
-    "version": "1.1.0",
-    "description": "A small javascript library to add keyboard shortcuts to your website.",
-    "main": "lib/index.js",
-    "types": "lib",
-    "scripts": {
-        "watch": "watchexec --exts ts npm run build",
-        "build": "esbuild --bundle --format=iife --sourcemap --global-name=KeyboardMaster --outfile=lib/index.js src/index.ts",
-        "minify-build": "esbuild --bundle --minify  --format=iife --sourcemap --global-name=KeyboardMaster --outfile=lib/index.min.js src/index.ts",
-        "build-all": "npm run build && npm run minify-build"
-    },
-    "keywords": [
-        "keyboard",
-        "keyboard-shortcuts",
-        "front-end"
-    ],
-    "author": {
-        "name": "Sahithyan",
-        "email": "sahithyan2701@gmail.com"
-    },
-    "license": "ISC",
-    "devDependencies": {
-        "esbuild": "^0.7.19",
-        "typescript": "^3.7.3"
-    }
+	"name": "keyboard-master",
+	"version": "1.1.0",
+	"description": "A small javascript library to add keyboard shortcuts to your website.",
+	"main": "lib/index.js",
+	"types": "lib",
+	"scripts": {
+		"watch": "watchexec --exts ts npm run build",
+		"build": "esbuild --bundle --format=iife --sourcemap --global-name=KeyboardMaster --outfile=lib/index.js src/index.ts",
+		"minify-build": "esbuild --bundle --minify  --format=iife --sourcemap --global-name=KeyboardMaster --outfile=lib/index.min.js src/index.ts",
+		"build-all": "npm run build && npm run minify-build"
+	},
+	"keywords": [
+		"keyboard",
+		"keyboard-shortcuts",
+		"front-end"
+	],
+	"author": {
+		"name": "Sahithyan",
+		"email": "sahithyan2701@gmail.com"
+	},
+	"license": "ISC",
+	"devDependencies": {
+		"@typescript-eslint/eslint-plugin": "^4.6.0",
+		"@typescript-eslint/parser": "^4.6.0",
+		"esbuild": "^0.7.19",
+		"eslint": "^7.12.1",
+		"eslint-config-prettier": "^6.15.0",
+		"eslint-plugin-prettier": "^3.1.4",
+		"prettier": "^2.1.2",
+		"typescript": "^4.0.5"
+	}
 }

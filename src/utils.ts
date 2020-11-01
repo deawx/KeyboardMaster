@@ -19,8 +19,6 @@ export function formatBinding(keyBinding: string, splitter: string): string {
         .join(splitter);
 }
 
-
-
 /**
  * @param {String} key Key to format
  * @description Formats a key

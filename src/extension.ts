@@ -1,4 +1,4 @@
-import { keyBindingObject, keyBindingArray } from "./data-types";
+import { keyBindingArray } from "./data-types";
 
 declare global {
     interface HTMLElement {
